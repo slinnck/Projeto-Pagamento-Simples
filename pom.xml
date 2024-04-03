@@ -8,18 +8,19 @@
   <packaging>${packaging}</packaging>
 
   <parent>
-    <groupId>io.micronaut.platform</groupId>
+    <groupId>io.micronaut</groupId>
     <artifactId>micronaut-parent</artifactId>
-    <version>4.3.7</version>
+    <version>3.10.1</version>
   </parent>
   <properties>
     <packaging>jar</packaging>
-    <jdk.version>17</jdk.version>
-    <release.version>17</release.version>
-    <micronaut.version>4.3.7</micronaut.version>
+    <jdk.version>11</jdk.version>
+    <release.version>11</release.version>
+    <micronaut.version>3.10.1</micronaut.version>
+    <micronaut.data.version>3.10.0</micronaut.data.version>
     <micronaut.runtime>netty</micronaut.runtime>
-    <micronaut.aot.enabled>false</micronaut.aot.enabled>
-    <micronaut.aot.packageName>meio.pagamento.br.com.aot.generated</micronaut.aot.packageName>
+<!--    <micronaut.aot.enabled>false</micronaut.aot.enabled>-->
+<!--    <micronaut.aot.packageName>meio.pagamento.br.com.aot.generated</micronaut.aot.packageName>-->
     <exec.mainClass>meio.pagamento.Application</exec.mainClass>
   </properties>
 
@@ -90,7 +91,7 @@
   <build>
     <plugins>
       <plugin>
-        <groupId>io.micronaut.maven</groupId>
+        <groupId>io.micronaut.build</groupId>
         <artifactId>micronaut-maven-plugin</artifactId>
         <configuration>
           <configFile>aot-${packaging}.properties</configFile>

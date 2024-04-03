@@ -1,4 +1,4 @@
-package meio.pagamento.Enum;
+package meio.pagamento.enums;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -7,8 +7,9 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum TipoStatusClienteEnum {
 
-    CLIENTE_ATIVO(0, "Ativo"),
-    CLIENTE_INATIVO(1, "Inativo");
+    CLIENTE_INATIVO(0, "Inativo"),
+    CLIENTE_ATIVO(1, "Ativo"),
+    CLIENTE_EXCLUIDO(2, "Excluido");
 
     private final int id;
     private final String descricao;

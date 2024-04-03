@@ -1,7 +1,10 @@
-package meio.pagamento.DTO;
+package meio.pagamento.dto;
 
 import io.micronaut.serde.annotation.Serdeable;
 import lombok.*;
+import meio.pagamento.entity.Cliente;
+
+import java.util.List;
 
 @NoArgsConstructor
 @AllArgsConstructor
@@ -10,6 +13,5 @@ import lombok.*;
 @Data
 public class ClienteDTO {
 
-    private int idFaturaAberta;
-
+    private Cliente cliente;
 }
